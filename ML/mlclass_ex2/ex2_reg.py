@@ -20,11 +20,7 @@ from numpy import *
 from matplotlib.pyplot import *
 from scipy import optimize
 
-from plotData import plotData
-from costFunctionReg import costFunctionReg
-from mapFeature import mapFeature
-from plotDecisionBoundary import plotDecisionBoundary
-from predict import predict
+from exerciseTwo import plotData, costFunctionReg, mapFeature, plotDecisionBoundary, predict
 
 ## Load Data
 #  The first two columns contains the X values and the third column
