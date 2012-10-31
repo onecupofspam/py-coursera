@@ -2,7 +2,7 @@ import nose
 from numpy import *
 from numpy.testing import *
 
-from computeCostMulti import computeCostMulti
+from exerciseOne import computeCostMulti
 
 def testComputeCostMulti1():
     X = array([[1., 0.]])

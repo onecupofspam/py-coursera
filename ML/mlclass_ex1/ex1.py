@@ -29,10 +29,8 @@ from numpy import *
 from matplotlib.pyplot import *
 from mpl_toolkits.mplot3d import axes3d, Axes3D
 
-from warmUpExercise import warmUpExercise
-from plotData import plotData
-from computeCost import computeCost
-from gradientDescent import gradientDescent
+from exerciseOne import warmUpExercise, plotData, computeCost, gradientDescent
+
 
 # is there any equivalent to "clear all; close all; clc"?
 
@@ -65,7 +63,7 @@ raw_input()
 ## =================== Part 3: Gradient descent ===================
 print 'Running Gradient Descent ...'
 
-X = column_stack((ones(m), data[:,0])) # Add a column of ones to x
+X_data = column_stack((ones(m), data[:,0])) # Add a column of ones to x
 theta = zeros(2) # initialize fitting parameters
 
 # Some gradient descent settings
@@ -73,10 +71,10 @@ iterations = 1500
 alpha = 0.01
 
 # compute and display initial cost
-print computeCost(X, y, theta)
+print computeCost(X_data, y, theta)
 
 # run gradient descent
-(theta, J_history) = gradientDescent(X, y, theta, alpha, iterations)
+(theta, J_history) = gradientDescent(X_data, y, theta, alpha, iterations)
 #pdb.set_trace()
 
 # print theta to screen
@@ -85,7 +83,7 @@ print '%f %f \n' % (theta[0], theta[1])
 
 # Plot the linear fit
 hold(True); # keep previous plot visible
-plot(X[:,1], X.dot(theta), '-')
+plot(X_data[:,1], X.dot(theta), '-')
 legend(('Training data', 'Linear regression'))
 firstPlot.show()
 # not sure how to avoid overlaying any more plots on this figure - call figure()?

@@ -28,9 +28,8 @@ from numpy import *
 from matplotlib.pyplot import *
 from mpl_toolkits.mplot3d import axes3d, Axes3D
 
-from featureNormalize import featureNormalize
-from gradientDescentMulti import gradientDescentMulti
-from normalEqn import normalEqn
+from exerciseOne import featureNormalize, gradientDescentMulti, normalEqn
+
 
 
 ## Initialization
@@ -59,7 +58,7 @@ print 'Normalizing Features ...'
 X, mu, sigma = featureNormalize(X)
 
 # Add intercept term to X
-X = column_stack((ones(m), X))
+X_data = column_stack((ones(m), X))
 
 
 ## ================ Part 2: Gradient Descent ================
@@ -94,7 +93,7 @@ num_iters = 400
 
 # Init Theta and Run Gradient Descent
 theta = zeros(3)
-theta, J_history = gradientDescentMulti(X, y, theta, alpha, num_iters);
+theta, J_history = gradientDescentMulti(X_data, y, theta, alpha, num_iters);
 
 # Plot the convergence graph
 fig = figure()
@@ -143,10 +142,10 @@ y = data[:, 2]
 m = len(y)
 
 # Add intercept term to X
-X = column_stack((ones(m), X))
+X_data = column_stack((ones(m), X))
 
 # Calculate the parameters from the normal equation
-theta = normalEqn(X, y)
+theta = normalEqn(X_data, y)
 
 # Display normal equation's result
 print 'Theta computed from the normal equations:'

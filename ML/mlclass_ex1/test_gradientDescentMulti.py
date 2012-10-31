@@ -2,7 +2,7 @@ import nose
 from numpy import *
 from numpy.testing import *
 
-from gradientDescentMulti import gradientDescentMulti
+from exerciseOne import gradientDescentMulti
 
 def testGradientDescentMulti1():
     X = array([[1.,0.]])
