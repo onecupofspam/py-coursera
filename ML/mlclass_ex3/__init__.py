@@ -1,7 +1,7 @@
-from displayData import displayData
-from lrCostFunction import lrCostFunction
-from oneVsAll import oneVsAll
-from predict import predict
-from predictOneVsAll import predictOneVsAll
-from sigmoid import sigmoid
+from exerciseThree import displayData
+from exerciseThree import lrCostFunction
+from exerciseThree import oneVsAll
+from exerciseThree import predict
+from exerciseThree import predictOneVsAll
+from exerciseThree import sigmoid
 

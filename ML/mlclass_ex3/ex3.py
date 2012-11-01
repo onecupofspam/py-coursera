@@ -20,9 +20,7 @@ from numpy import *
 from scipy.io import loadmat
 from matplotlib.pyplot import *
 
-from displayData import displayData
-from oneVsAll import oneVsAll
-from predictOneVsAll import predictOneVsAll
+from exerciseThree import displayData, oneVsAll, predictOneVsAll
 
 ## Setup the parameters you will use for this part of the exercise
 input_layer_size = 400    # 20x20 Input Images of Digits
