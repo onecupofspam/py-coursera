@@ -23,15 +23,15 @@ from scipy.io import loadmat
 from matplotlib.pyplot import *
 from mpl_toolkits.mplot3d import axes3d, Axes3D
 
-from featureNormalize import featureNormalize
-from pca import pca
-from drawLine import drawLine
-from projectData import projectData
-from recoverData import recoverData
-from displayData import displayData
-from kMeansInitCentroids import kMeansInitCentroids
-from runkMeans import runkMeans
-from plotDataPoints import plotDataPoints
+from exerciseSeven import featureNormalize
+from exerciseSeven import pca
+from exerciseSeven import drawLine
+from exerciseSeven import projectData
+from exerciseSeven import recoverData
+from exerciseSeven import displayData
+from exerciseSeven import kMeansInitCentroids
+from exerciseSeven import runkMeans
+from exerciseSeven import plotDataPoints
 
 ## ================== Part 1: Load Example Dataset  ===================
 #  We start this exercise by using a small dataset that is easily to

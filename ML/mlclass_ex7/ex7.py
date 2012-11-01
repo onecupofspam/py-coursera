@@ -22,10 +22,10 @@ from numpy import *
 from scipy.io import loadmat
 from matplotlib.pyplot import *
 
-from findClosestCentroids import findClosestCentroids
-from computeCentroids import computeCentroids
-from runkMeans import runkMeans
-from kMeansInitCentroids import kMeansInitCentroids
+from exerciseSeven import findClosestCentroids
+from exerciseSeven import computeCentroids
+from exerciseSeven import runkMeans
+from exerciseSeven import kMeansInitCentroids
 
 ## ================= Part 1: Find Closest Centroids ====================
 #  To help you implement K-Means, we have divided the learning algorithm
