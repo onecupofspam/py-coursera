@@ -20,13 +20,13 @@ from numpy import *
 from scipy.io import loadmat
 from matplotlib.pyplot import *
 
-from linearRegCostFunction import linearRegCostFunction
-from trainLinearReg import trainLinearReg
-from learningCurve import learningCurve
-from polyFeatures import polyFeatures
-from featureNormalize import featureNormalize
-from plotFit import plotFit
-from validationCurve import validationCurve
+from exerciseFive import linearRegCostFunction
+from exerciseFive import trainLinearReg
+from exerciseFive import learningCurve
+from exerciseFive import polyFeatures
+from exerciseFive import featureNormalize
+from exerciseFive import plotFit
+from exerciseFive import validationCurve
 
 ## ===== HELPERS =====
 
