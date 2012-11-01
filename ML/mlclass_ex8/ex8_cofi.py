@@ -20,10 +20,10 @@ from scipy.io import loadmat
 from scipy.optimize import minimize
 from matplotlib.pyplot import *
 
-from cofiCostFunc import cofiCostFunc
-from checkCostFunction import checkCostFunction
-from loadMovieList import loadMovieList
-from normalizeRatings import normalizeRatings
+from exerciseEight import cofiCostFunc
+from exerciseEight import checkCostFunction
+from exerciseEight import loadMovieList
+from exerciseEight import normalizeRatings
 
 ## ===== HELPERS =====
 

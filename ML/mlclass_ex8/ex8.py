@@ -19,10 +19,10 @@ from numpy import *
 from scipy.io import loadmat
 from matplotlib.pyplot import *
 
-from estimateGaussian import estimateGaussian
-from multivariateGaussian import multivariateGaussian
-from visualizeFit import visualizeFit
-from selectThreshold import selectThreshold
+from exerciseEight import estimateGaussian
+from exerciseEight import multivariateGaussian
+from exerciseEight import visualizeFit
+from exerciseEight import selectThreshold
 
 ## ================== Part 1: Load Example Dataset  ===================
 #  We start this exercise by using a small dataset that is easy to
