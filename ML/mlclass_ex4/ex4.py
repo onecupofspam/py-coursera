@@ -20,12 +20,12 @@ from scipy.io import loadmat
 from scipy.optimize import minimize
 from matplotlib.pyplot import *
 
-from displayData import displayData
-from nnCostFunction import nnCostFunction
-from sigmoidGradient import sigmoidGradient
-from randInitializeWeights import randInitializeWeights
-from checkNNGradients import checkNNGradients
-from predict import predict
+from exerciseFour import displayData
+from exerciseFour import nnCostFunction
+from exerciseFour import sigmoidGradient
+from exerciseFour import randInitializeWeights
+from exerciseFour import checkNNGradients
+from exerciseFour import predict
 
 
 ## Setup the parameters you will use for this exercise
