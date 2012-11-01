@@ -19,11 +19,12 @@
 from numpy import *
 from scipy.io import loadmat
 
-from processEmail import processEmail, getVocabDict
-from emailFeatures import emailFeatures
-from svmTrain import svmTrain
-from linearKernel import linearKernel
+from exerciseSix import processEmail, getVocabDict
+from exerciseSix import emailFeatures
+from exerciseSix import linearKernel
+
 from svmPredict import svmPredict
+from svmTrain import svmTrain
 
 ## ==================== Part 1: Email Preprocessing ====================
 #  To use an SVM to classify emails into Spam v.s. Non-Spam, you first need

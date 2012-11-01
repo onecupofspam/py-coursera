@@ -21,13 +21,14 @@ from scipy.io import loadmat
 from matplotlib.pyplot import *
 from functools import wraps
 
-from plotData import plotData
+from exerciseSix import plotData
+from exerciseSix import linearKernel
+from exerciseSix import visualizeBoundaryLinear
+from exerciseSix import gaussianKernel
+from exerciseSix import visualizeBoundary
+from exerciseSix import dataset3Params
+
 from svmTrain import svmTrain
-from linearKernel import linearKernel
-from visualizeBoundaryLinear import visualizeBoundaryLinear
-from gaussianKernel import gaussianKernel
-from visualizeBoundary import visualizeBoundary
-from dataset3Params import dataset3Params
 
 ## =============== Part 1: Loading and Visualizing Data ================
 #  We start the exercise by first loading and visualizing the dataset.
