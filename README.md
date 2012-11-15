@@ -52,3 +52,12 @@ email [sjoseph@hpu.edu](mailto:sjoseph@hpu.edu).
 [OrigDisc]: https://class.coursera.org/pgm/forum/thread?thread_id=2382
 
 Many thanks to all Contributors including [Jeff Tratner](https://github.com/jtratner), Arthur Dent, Andrew Clegg
+
+
+Alan Wong (11/3/2012): this Python code depends upon:
+
+Python 2.7.3
+Enthought's EPD 7.3-2
+NumPy 1.6.1
+SciPy 0.10.1
+SciKit

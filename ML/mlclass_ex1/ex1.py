@@ -24,12 +24,14 @@
 #
 
 import pdb
-## Initialization
 from numpy import *
 from matplotlib.pyplot import *
 from mpl_toolkits.mplot3d import axes3d, Axes3D
 
-from exerciseOne import warmUpExercise, plotData, computeCost, gradientDescent
+from exerciseOne import warmUpExercise
+from exerciseOne import plotData
+from exerciseOne import computeCost
+from exerciseOne import gradientDescent
 
 
 # is there any equivalent to "clear all; close all; clc"?
@@ -47,8 +49,11 @@ raw_input()
 ## ======================= Part 2: Plotting =======================
 print 'Plotting Data ...'
 data = loadtxt('./ex1data1.txt', delimiter=',')
-X = data[:, 0]; y = data[:, 1]
-m = len(y) # number of training examples
+X = data[:, 0]
+y = data[:, 1]
+n,m = shape(matrix(X))
+# m: number of training examples
+# n: number of features
 
 # Plot Data
 # Note: You have to complete the code in plotData.py
@@ -63,7 +68,7 @@ raw_input()
 ## =================== Part 3: Gradient descent ===================
 print 'Running Gradient Descent ...'
 
-X_data = column_stack((ones(m), data[:,0])) # Add a column of ones to x
+X_design = column_stack((ones(m), data[:,0])) # Add a column of ones to x
 theta = zeros(2) # initialize fitting parameters
 
 # Some gradient descent settings
@@ -71,10 +76,10 @@ iterations = 1500
 alpha = 0.01
 
 # compute and display initial cost
-print computeCost(X_data, y, theta)
+print computeCost(X_design, y, theta)
 
 # run gradient descent
-(theta, J_history) = gradientDescent(X_data, y, theta, alpha, iterations)
+(theta, J_history) = gradientDescent(X_design, y, theta, alpha, iterations)
 #pdb.set_trace()
 
 # print theta to screen
@@ -83,7 +88,7 @@ print '%f %f \n' % (theta[0], theta[1])
 
 # Plot the linear fit
 hold(True); # keep previous plot visible
-plot(X_data[:,1], X.dot(theta), '-')
+plot(X_design[:,1], X_design.dot(theta), '-')
 legend(('Training data', 'Linear regression'))
 firstPlot.show()
 # not sure how to avoid overlaying any more plots on this figure - call figure()?
@@ -113,7 +118,7 @@ J_vals = zeros((len(theta0_vals), len(theta1_vals)))
 for i in range(len(theta0_vals)):
     for j in range(len(theta1_vals)):
         t = array((theta0_vals[i], theta1_vals[j]))
-        J_vals[i][j] = computeCost(X, y, t)
+        J_vals[i][j] = computeCost(X_design, y, t)
 
 
 # Because of the way meshgrids and mplot3d work, we need to transpose
