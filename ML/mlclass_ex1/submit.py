@@ -18,8 +18,8 @@ __all__ = ['submit']
 
 # ================== CONFIGURABLES FOR EACH HOMEWORK ==================
 
-challenge_url = 'https://class.coursera.org/ml-2012-002/assignment/challenge'
-submit_url = 'https://class.coursera.org/ml-2012-002/assignment/submit'
+challenge_url = 'https://class.coursera.org/ml-006/assignment/challenge'
+submit_url = 'https://class.coursera.org/ml-006/assignment/submit'
 homework_id = '1'
 
 part_names = [
@@ -43,7 +43,7 @@ srcs = [
     ]
 
 def output(part_id, auxstring):
-    X1 = column_stack((ones(20), exp(1) + exp(2) * linspace(0.1, 20., 20)))
+    X1 = column_stack((ones(20), exp(1) + exp(2) * linspace(0.1, 2., 20)))
     Y1 = X1[:,1] + sin(X1[:,0]) + cos(X1[:,1])
     X2 = column_stack((X1, X1[:,1]**0.5, X1[:,1]**0.25))
     Y2 = power(Y1, 0.5) + Y1
